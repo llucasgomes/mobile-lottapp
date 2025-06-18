@@ -1,50 +1,64 @@
-# Welcome to your Expo app 👋
+# Amarelinho Tracker 🚐📍
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Um aplicativo em React Native para motoristas de "amarelinhos" acompanharem em tempo real a posição de outros veículos na mesma rota, com o objetivo de melhorar a organização, produtividade e economia no transporte urbano da cidade.
 
-## Get started
+## 📋 Objetivo
 
-1. Install dependencies
+Ajudar motoristas de micro-ônibus (os conhecidos "amarelinhos") a:
 
+- Visualizar em tempo real a localização de outros veículos na mesma rota.
+- Saber quem está à sua frente ou atrás.
+- Avaliar se vale a pena entrar em determinada rota ou aguardar outra.
+- Evitar excesso de veículos na mesma linha, otimizando custos e tempo.
+- Melhorar a comunicação e produtividade no transporte de passageiros.
+
+## 🧩 Funcionalidades principais (MVP)
+
+- [ ] Autenticação de motoristas
+- [ ] Atualização da localização em tempo real
+- [ ] Visualização de outros motoristas no mapa
+- [ ] Identificação de posição relativa (quem está à frente)
+- [ ] Sistema de rotas configuráveis
+- [ ] Notificações de excesso de veículos em uma rota
+- [ ] Painel administrativo para gestão das rotas (futuro)
+
+## 🚧 Status do projeto
+
+> ⚠️ Em desenvolvimento. Versão inicial sendo construída com foco no rastreamento básico e no mapa em tempo real.
+
+## 💻 Tecnologias utilizadas
+
+- [React Native](https://reactnative.dev/) (base do app)
+- [Expo](https://expo.dev/) (facilita o desenvolvimento e build)
+- [NativeWind](https://www.nativewind.dev/) (estilização com Tailwind)
+- [React Native Maps](https://github.com/react-native-maps/react-native-maps) (exibição do mapa)
+- [Firebase / Supabase / Backend próprio] (a definir para autenticação e geolocalização)
+- [Socket.IO ou WebSocket] (atualização em tempo real)
+
+## 🧠 Motivação
+
+Na cidade onde vivo, os motoristas de "amarelinhos" enfrentam dificuldades para saber onde estão os colegas na mesma linha, o que frequentemente resulta em:
+
+- Trânsito sobrecarregado em determinadas rotas
+- Perda de tempo e passageiros
+- Desperdício de combustível e recursos
+
+Esse projeto nasce da observação direta dessa dor real, com a missão de trazer mais organização, tecnologia e praticidade para esses profissionais.
+
+## 🛠 Como rodar o projeto localmente
+
+1. Clone este repositório:
    ```bash
-   npm install
-   ```
+   git clone https://github.com/seu-usuario/amarelinho-tracker.git
+   cd amarelinho-tracker
 
-2. Start the app
+## 🤝 Contribuições
+Este projeto está aberto para contribuições! Se você acredita que pode ajudar, sinta-se à vontade para abrir uma issue ou PR. Toda ajuda é bem-vinda para tornar esse app mais eficiente para os motoristas da cidade.
 
-   ```bash
-   npx expo start
-   ```
+📄 Licença
+Este projeto está licenciado sob a MIT License.
 
-In the output, you'll find options to open the app in a
+Feito com ❤️ para transformar o transporte coletivo da nossa cidade.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Se você quiser, posso personalizar ainda mais com o nome da cidade, seu nome como autor, e os serviços reais que você está usando (Firebase, Supabase, banco de dados etc). Deseja que eu adicione isso?
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
